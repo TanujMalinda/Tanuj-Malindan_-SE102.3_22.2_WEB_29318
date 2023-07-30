@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+      <script>
+        function displayDateTime() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString(); // Get the date and time in the user's local format
+            document.getElementById("dateTime").textContent = dateTimeString;
+        }
+
+        // Call the function initially and update every second
+        displayDateTime();
+        setInterval(displayDateTime, 1000);
+                 const videoPlayer = document.getElementById("videoPlayer");
+
+        videoPlayer.addEventListener("mouseenter", function () {
+            videoPlayer.play();
+        });
+
+        videoPlayer.addEventListener("mouseleave", function () {
+            videoPlayer.pause();
+        });
+    </script>
+</head>
+<body>
+    <h1>Date and Time Display</h1>
+    <p id="dateTime"></p>
+
+      <h1>Video Player</h1>
+    <video id="videoPlayer" width="640" height="360" controls>
+        <source src="your_video_file.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
