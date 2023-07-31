@@ -1,0 +1,41 @@
+<html>
+<head>
+
+    
+    </head>
+    <body>
+       
+            <script>
+                
+                let total=0;
+                let average=0;
+       
+    
+        for(var i=0;i<5;i++)
+        
+            {
+                var marks=parseInt(window.prompt("Enter youre "+(i+1)+" marks  :"))
+                total=total+marks;
+            }
+                average=total/5;
+                document.write("Total  :"+total);
+                document.write("<br>");
+                document.write("\naverage:"+average);
+                     document.write("<br>");
+                
+                
+    function x(){
+if(average>30){
+   window. alert("Congrats! You passed");
+}       
+        else{
+           window. alert("Better luck next time");
+        }
+              }
+                
+    
+                
+    </script>
+        <input type="button" name="bt" value="Grade" onclick="x()">
+</body>
+</html>
